@@ -1,21 +1,101 @@
 <html>
-<style>
-    @font-face {
-  font-family: 'United Sans';
-  src: url("font.woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2212; }
-  h1 {
-      font-family: 'United Sans';
-  }
-</style>
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700" rel="stylesheet" type="text/css">
+    <style>
+        @font-face {
+            font-family: 'United Sans';
+            src: url("font.woff2");
+            font-weight: 700;
+            font-style: normal;
+            font-stretch: normal;
+            unicode-range: U+0020-2212;
+        }
+
+        * {
+            box-sizing: border-box;
+            max-width: 100vw;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        h1 {
+            min-height: calc(100vh - 20px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #ffd800;
+            padding: 10px;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        h1,
+        strong {
+            font-family: 'United Sans';
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        h1 span {
+            display: block;
+            font-size: 6vw;
+            line-height: 1.2;
+        }
+
+        p {
+            max-width: 680px;
+            width: 100%;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        img {
+            object-fit: cover;
+            width: calc(100% + 20px);
+            height: 95vh;
+            margin-left: -10px;
+        }
+    </style>
+
 </head>
 
 <body>
-    <h1>Heja Elfsborg</h1>
+    <h1><span>På distans.</span>
+        <span>Utan publik.</span>
+        <span>En oviss framtid.</span>
+        <span>Men fortfarande Tillsammans.</span></h1>
+
+    <p><strong>2020 har utvecklats</strong> till ett år som är allt annat än vad vi hade kunnat förvänta oss. Vi gick in
+        i året
+        med en stark framtidstro beredda att ta Nästa steg som förening. Vid den här tidpunkten skulle vi
+        vanligtvis ha spelat en stor del av vårens matcher. Kärnan i hela IF Elfsborgs verksamhet handlar om
+        att samla människor, om att vara Vi Tillsammans. Den rådande Coronapandemin medför
+        hälsomässiga och ekonomiska konsekvenser som innebär matcher inför tomma läktare. En prövning
+        där vi idag inte har svaret på hur länge eller hur omfattande nuvarande beslut påverkar oss.</p>
+    <img src="img1.jpg" />
+    <p><strong>Vår förening</strong>, IF Elfsborg blir den 26 juni 116 år. Coronapandemin är en av de största utmaningar
+        vår
+        förening gått igenom. Vi känner ett stort ansvar att hantera dess skadeverkningar på bästa möjliga
+        sätt. All anställd personal inklusive spelare har redan gått ner i lön och ifrån föreningens sida finns
+        beredskap att vidta ytterligare åtgärder. Vi har redan sett kraften som finns bland våra supportrar i
+        de kampanjer som genomförts. Många är ni både privatpersoner och företag som redan har hört av
+        sig för att bidra både ekonomiskt och på andra sätt. Tack!</p>
+    <img src="img2.jpg" />
+    <p><strong>Vi står tillsammans</strong> – är en plattform som vänder sig till alla våra medlemmar, sponsorer och
+        supportrar. IF Elfsborg vill fortsätta att vara en samlingspunkt för mängder av människor, vi tror på
+        styrkan att fortsätta att arbeta tillsammans. Vårt arbete nu, alla val som görs och alla insatser under
+        året kommer att vara avgörande för vilken typ av förening IF Elfsborg ska vara när vi kommer ut på
+        andra sidan av den här prövningen. I en tid av ovisshet och oro är det än viktigare i ett samhälle att
+        ha saker att samlas kring. Att skapa drömmar och framtidstro. IF Elfsborg behöver ditt fortsatta stöd,
+        nu och långsikigt och det finns flera olika sätt som du kan bidra!</p>
+
 </body>
 
 </html>
