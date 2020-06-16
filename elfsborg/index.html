@@ -3,6 +3,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/94806486c5.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/94806486c5.js" crossorigin="anonymous"></script>
     <style>
         @font-face {
             font-family: 'United Sans';
@@ -23,26 +25,39 @@
             line-height: 1.6;
             margin: 10px;
             font-size: 18px;
+            text-align: center;
         }
 
         h1 {
+            text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.5);
             min-height: calc(100vh - 20px);
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background: #ffd800;
+            background-image: url('img1.jpg');
+            background-size: cover;
             padding: 10px;
             margin-top: 10px;
             position: relative;
+            text-align: left;
         }
-        @media screen and (max-width:640px) {
-            h1 {
-                min-height:50vh;
-            }
+
+        h1:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #ffd80099;
+            content: '';
+            z-index: 0;
         }
 
         h1,
-        strong {
+        strong,
+        h2,
+        h3,
+        a {
             font-family: 'United Sans';
             -webkit-font-smoothing: antialiased;
             text-rendering: optimizeLegibility;
@@ -52,20 +67,110 @@
             display: block;
             font-size: 6vw;
             line-height: 1.2;
+            position: relative;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        h2,
+        h3 {
+            text-align: center;
+            margin-top: 0;
+            width: 100%;
+            max-width: 680px;
+            margin: 0 auto 2rem;
+            line-height: 1.2em;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 0.8rem;
+        }
+
+        h3 small {
+            font-size: 50%;
+            text-transform: uppercase;
+            display: block;
+            text-align: center !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
         }
 
         p {
             max-width: 680px;
             width: 100%;
-            margin: 2rem auto;
+            margin: 0 auto;
             padding: 1rem;
+            padding-top: 0;
         }
 
         img {
             object-fit: cover;
             width: calc(100% + 20px);
-            height: 95vh;
-            margin-left: -10px;
+            height: 20vw;
+            margin: 2rem 0 2rem -10px;
+        }
+
+        img:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            display: block;
+            background: #ffd800;
+            border-radius: 3px;
+            color: #000;
+            text-decoration: none;
+            padding: 10px 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 3rem;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+            transition: .2s;
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 20px);
+        }
+
+        a:hover {
+            background: #000;
+            color: #ffd800;
+        }
+
+        .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .box {
+            width: 25%;
+            position: relative;
+            padding: 10px;
+            padding-bottom: 6rem;
+        }
+
+        .box small {
+            display: block;
+            font-size: 11px;
+            margin-top: -10px;
+            margin-bottom: 10px;
+
+        }
+
+        @media screen and (max-width:640px) {
+            h1 {
+                min-height: 50vh;
+            }
+
+            .box {
+                width: 100%;
+            }
         }
     </style>
 
@@ -77,30 +182,62 @@
         <span>En oviss framtid.</span>
         <span>Men fortfarande Tillsammans.</span></h1>
 
-    <p><strong>2020 har utvecklats</strong> till ett år som är allt annat än vad vi hade kunnat förvänta oss. Vi gick in
-        i året
-        med en stark framtidstro beredda att ta Nästa steg som förening. Vid den här tidpunkten skulle vi
-        vanligtvis ha spelat en stor del av vårens matcher. Kärnan i hela IF Elfsborgs verksamhet handlar om
-        att samla människor, om att vara Vi Tillsammans. Den rådande Coronapandemin medför
-        hälsomässiga och ekonomiska konsekvenser som innebär matcher inför tomma läktare. En prövning
-        där vi idag inte har svaret på hur länge eller hur omfattande nuvarande beslut påverkar oss.</p>
-    <img src="img1.jpg" />
-    <p><strong>Vår förening</strong>, IF Elfsborg blir den 26 juni 116 år. Coronapandemin är en av de största utmaningar
-        vår
-        förening gått igenom. Vi känner ett stort ansvar att hantera dess skadeverkningar på bästa möjliga
-        sätt. All anställd personal inklusive spelare har redan gått ner i lön och ifrån föreningens sida finns
-        beredskap att vidta ytterligare åtgärder. Vi har redan sett kraften som finns bland våra supportrar i
-        de kampanjer som genomförts. Många är ni både privatpersoner och företag som redan har hört av
-        sig för att bidra både ekonomiskt och på andra sätt. Tack!</p>
+    <p><strong>Vi står tillsammans</strong> är en plattform som vänder sig till alla våra medlemmar, sponsorer och
+        supportrar. IF Elfsborg vill fortsätta att vara en samlingspunkt för mängder av människor, vi tror på styrkan
+        att fortsätta att arbeta tillsammans. Vårt arbete nu, alla val som görs och alla insatser under året kommer att
+        vara avgörande för vilken typ av förening IF Elfsborg ska vara när vi kommer ut på andra sidan av den här
+        prövningen. I en tid av ovisshet och oro är det än viktigare i ett samhälle att ha saker att samlas kring. Att
+        skapa drömmar och framtidstro. IF Elfsborg behöver ditt fortsatta stöd, nu och långsiktigt och det finns flera
+        olika sätt som du kan bidra!</p>
     <img src="img2.jpg" />
-    <p><strong>Vi står tillsammans</strong> – är en plattform som vänder sig till alla våra medlemmar, sponsorer och
-        supportrar. IF Elfsborg vill fortsätta att vara en samlingspunkt för mängder av människor, vi tror på
-        styrkan att fortsätta att arbeta tillsammans. Vårt arbete nu, alla val som görs och alla insatser under
-        året kommer att vara avgörande för vilken typ av förening IF Elfsborg ska vara när vi kommer ut på
-        andra sidan av den här prövningen. I en tid av ovisshet och oro är det än viktigare i ett samhälle att
-        ha saker att samlas kring. Att skapa drömmar och framtidstro. IF Elfsborg behöver ditt fortsatta stöd,
-        nu och långsikigt och det finns flera olika sätt som du kan bidra!</p>
+    <h2>Några insatser som betyder extra mycket just nu:</h2>
+    <section class="boxes">
+        <div class="box">
+            <h3>Köp dina stödbiljetter! <small>(Fiktiva biljetter till nästkommande hemmamatch)</small></h3>
 
+            <p>Inför hemmapremiären mot Hammarby siktar vi på att slå förra årets premiärsiffra på 8737. Efter vårens
+                insatser
+                ligger vi på 6100 sålda stödbiljetter! Hjälp oss att nå målet!</p>
+
+            <small>Varje fiktiv stödbiljett kostar 50 kr. Du kan swisha valfritt belopp till nummer: 1230610584</small>
+
+            <a id="swish" target="_blank" href="swish.png">Swisha</a>
+        </div>
+
+        <div class="box">
+            <h3>Stå kvar med din seriebiljett</h3>
+            <p>Din seriebiljett har aldrig varit viktigare för oss. Vi uppmanar dig som kan att stå kvar oavsett hur
+                många
+                matcher det till slut blir utan publik. Läs mer och fyll i dina uppgifter.</p>
+            <a>Seriebiljett</a>
+        </div>
+
+        <div class="box">
+            <h3>Köp dina souvenirer och färga hela staden gul!</h3>
+
+            <p>Årets replica av matchtröjan och inmarschjackan har den klassiska E-revären och lejonet i nacken. Två
+                nyheter som
+                tagits emot väl bland våra supportrar. När vi inte kan vara på arenan, häng ut en flagga eller halsduk
+                där du
+                bor och färga staden gul.</p>
+            <a>Webshoppen</a>
+        </div>
+
+        <div class="box">
+            <h3>Bli medlem i IF Elfsborg</h3>
+
+            <p>Medlemmarna utgör stommen i vår förening. Varje medlem innebär en symbolisk betydelse och ett ekonomiskt
+                stöd.
+                Bli medlem i IF Elfsborg idag!</p>
+            <a>Bli medlem</a>
+        </div>
+    </section>
+
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            document.getElementById('swish').setAttribute('href', 'swish://payment?data=%7B%22amount%22:%7B%22value%22:50,%22editable%22:true%7D,%22message%22:%7B%22value%22:%22Soffbiljett%20%22,%22editable%22:false%7D,%22payee%22:%7B%22value%22:%22123%20061%2005%2084%22,%22editable%22:false%7D,%22version%22:1%7D');
+        }
+    </script>
 </body>
 
 </html>
